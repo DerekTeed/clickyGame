@@ -19,7 +19,7 @@ import Qui from './images/Qui-Gon-Jinn.jpg';
 import Rey from './images/rey.jpeg';
 import Yoda from './images/Yoda.jpg';
 
-const Images = [
+const images = [
   Admiral,
   bb8,
   Ben,
@@ -43,4 +43,4 @@ const Images = [
 
 ];
 
-export default Images;
+export default images;

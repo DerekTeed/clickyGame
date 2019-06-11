@@ -50,8 +50,9 @@ class ClickyGame extends Component {
 
   checkClicked(clickedElem) {
     // creates a copy of the wasClicked array to modify it by value, and not by reference. wasClicked stores all previous clicked images
+    console.log(this.state.wasClicked);
     const prevState = this.state.wasClicked.slice();
-
+    console.log(prevState);
     // shuffles the images
     const shuffled = this.shuffleArray();
 
@@ -109,6 +110,7 @@ class ClickyGame extends Component {
   // passes the this.checkClicked down to container to pass to each Character component to be used for the click event.
   render() {
     const state = this.state;
+    console.log("rendering")
     return (
       <div>
         <Navbar
@@ -120,7 +122,7 @@ class ClickyGame extends Component {
         <Banner />
         <Cards
           shake={state.shake}
-          characters={state.allCharacters}
+          xyz={state.allCharacters}
           clickEvent={this.clickEvent}
         />
         <Footer />

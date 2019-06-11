@@ -15,7 +15,7 @@ const Cards = props => (
         : 'cards d-flex flex-wrap justify-content-center'
     }
   >
-    {props.characters.map((a, i) => <Characters name={a} key={i} clickEvent={props.clickEvent} />)}
+    {props.xyz.map((image, i) => <Characters characterImage={image} key={i} clickEvent={props.clickEvent} />)}
   </div>
 );
 
